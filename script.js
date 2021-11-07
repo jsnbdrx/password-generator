@@ -5,15 +5,12 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
- 
-
+  var length = Number(prompt("How many characters would you like your password to be?"));
+  var uppers = confirm("Would you like to use uppercase letters?");
+  var lowers = confirm("Would you like to use lowercase letters?");
+  var numbers = confirm("Would you like to use numbers?");
+  var symbols = confirm("Would you like to use special characters?");
   
-//1.prompt user for password criteria
-//  a. length 8-128
-//  b. upper case
-//  c. lower case
-//  d. number
-//  e. special character
 //2. validate input
 //3. generate password based on criteria
 //4. display password to page
