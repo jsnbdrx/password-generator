@@ -1,11 +1,16 @@
 //define variables
 var length = Number(prompt("How many characters would you like your password to be?"));
+console.log(length);
 while (isNaN(length) || length < 8 || length > 128) length = Number(prompt("Length must be 8-128 characters. How many characters would you like your password to be?"));
 
 var upper = confirm("Would you like to use uppercase letters?");
+console.log(upper);
 var lower = confirm("Would you like to use lowercase letters?");
+console.log(lower);
 var number = confirm("Would you like to use numbers?");
+console.log(number);
 var symbol = confirm("Would you like to use special characters?");
+console.log(symbol);
 
 while (!upper && !lower && !number && !symbol) {
   alert("You must select at least one character type!");
@@ -43,6 +48,3 @@ function writePassword() {
   passwordText.value = password;
 
 }
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
